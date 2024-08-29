@@ -5,9 +5,9 @@ import ai from '../images/Ai.png'
 
 const UnitingPage = () => {
   return (
-    <div className="container md:flex mx-auto md:my-24 justify-between">
+    <div className="container md:flex mx-auto md:my-24 mt-5 justify-between">
       <div className="px-7">
-        <h6 className="font-medium text-6xl py-3">Uniting the world, <br />one video call a time</h6>
+        <h6 className="font-medium md:text-6xl text-4xl py-3">Uniting the world, <br />one video call a time</h6>
         <p className="py-2 text-gray-500 md:w-4/6">
           Experience the future of communication with ClearLink- where
           crystal-clear vidoe conferencing meets <br /> unparralled simplicity.
