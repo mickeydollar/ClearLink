@@ -2,6 +2,7 @@ import React from "react";
 import Avatar from "../images/Avatar.png";
 import frame from "../images/Frame.png";
 import ai from '../images/Ai.png'
+import review from '../images/Reviews.png'
 
 const UnitingPage = () => {
   return (
@@ -20,6 +21,7 @@ const UnitingPage = () => {
         </div>
         <div className="flex gap-3 mb-5">
           <img src={Avatar} className="h-6" alt="" />
+          <img src={review} alt="" className="h-7" />
         </div>
       </div>
       <div className="">

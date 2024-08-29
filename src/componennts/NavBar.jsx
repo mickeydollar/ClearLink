@@ -21,7 +21,7 @@ const NavBar = () => {
           <img src={logo} className="h-6" alt="logo" />
         </div>
         <ul className="hidden md:flex gap-10 items-center text-[#667085] font-medium">
-          <Link to="./product" className="flex gap-1 items-center">
+          <Link to="./products" className="flex gap-1 items-center">
             Products <ChevronDownIcon className="h-4" />
           </Link>
           <Link to="./solutions" className="flex gap-1 items-center">
