@@ -7,8 +7,8 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
 
 const ShopifySection = () => {
   return (
-    <div className='w-full md:flex bg-[#F9FAFB] justify-between py-20 mb-10'>
-        <div className='md:w-1/2  md:mx-20'>
+    <div className='md:flex bg-[#F9FAFB] justify-between py-20 mb-10'>
+        <div className='md:w-1/2  md:mx-20 mx-6'>
             <img src={shopify} className='h-6' alt="" />
             <div className="flex text-yellow-400 gap-1 py-6">
                 <StarIcon className='h-3'/>
@@ -17,8 +17,8 @@ const ShopifySection = () => {
                 <StarIcon className='h-3'/>
                 <StarIcon className='h-3'/>           
             </div>
-            <p className='font-medium text-black text-3xl w-96'>ClearLink has upgraded our remote meetings. High-quality video, screen sharing, and top-notch security make it essential for our team.</p>
-            <div className='flex py-6 justify-between w-96'>
+            <p className='font-medium text-black text-3xl md:w-96'>ClearLink has upgraded our remote meetings. High-quality video, screen sharing, and top-notch security make it essential for our team.</p>
+            <div className='flex py-6 justify-between md:w-96 mb-5'>
             <div className='gap-3 flex'>
             <img src={avatar1} className='h-10' alt="" />
             <div className='flex flex-col'>
@@ -33,7 +33,7 @@ const ShopifySection = () => {
                
             </div>
         </div>
-        <div className='w-1/2 flex justify-center'>
+        <div className='md:w-1/2 md:flex justify-center'>
             <img src={content} className='h-96' alt="" />
         </div>
 

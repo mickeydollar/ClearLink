@@ -8,7 +8,7 @@ const UnitingPage = () => {
     <div className="container md:flex mx-auto md:my-24 justify-between">
       <div className="px-7">
         <h6 className="font-medium text-6xl py-3">Uniting the world, <br />one video call a time</h6>
-        <p className="py-2 text-gray-500 w-4/6">
+        <p className="py-2 text-gray-500 md:w-4/6">
           Experience the future of communication with ClearLink- where
           crystal-clear vidoe conferencing meets <br /> unparralled simplicity.
         </p>
@@ -18,7 +18,7 @@ const UnitingPage = () => {
           </button>
           <button className="text-[#175CD3] font-medium flex items-center gap-1"> <img src={ai} className="h-3" alt="" /> Discover Ai assistant</button>
         </div>
-        <div className="flex gap-3">
+        <div className="flex gap-3 mb-5">
           <img src={Avatar} className="h-6" alt="" />
         </div>
       </div>

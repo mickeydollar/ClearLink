@@ -19,53 +19,52 @@ const TheadvantageSection = () => {
         In a world where connection is everything, ClearLink takes the lead. Our
         cutting-edge video conferencing app offers:
       </p>
-      <img src={handArrow} className="absolute top-9 right-48 h-40 " alt="" />
+      <img src={handArrow} className="absolute md:flex hidden md:top-9 md:right-48 md:h-40 " alt="" />
 
-      <div className="md:flex mt-16 justify-between">
-        <div className="w-2/4 flex-row flex-wrap flex">
-          <div className="md:w-2/4 md:h-2/4">
+      <div className="md:flex mt-16 md:justify-between">
+        <div className="md:w-2/4 flex-row flex-wrap md:flex">
+          <div className="md:w-2/4 w-full h-2/4">
             <div className="rounded-full p-3 my-4 border bg-[#F9FAFB] w-10">
               <VideoCameraIcon className="h-4 text-blue-800" />
             </div>
             <h3 className="font-medium text-black">Crystal-clear HD video</h3>
-            <p className="text-sm text-gray-500">
+            <p className="md:text-sm text-gray-500">
               No more pixelation or blurriness – just <br /> stunning, lifelike
               clarity that brings your <br /> team closer in meetings.
             </p>
           </div>
-          <div className="w-2/4 h-2/4">
+          <div className="md:w-2/4 h-2/4">
             <div className="rounded-full p-3 my-4 border bg-[#F9FAFB] w-10">
               <SpeakerWaveIcon className="h-4 text-blue-600" />
             </div>
             <h3 className="font-medium text-black">Noise-canceling audio</h3>
-            <p className="text-sm text-gray-500">
+            <p className="md:text-sm text-gray-500">
               Say goodbye to distractions with our <br /> advanced audio tech
               for crisp, <br /> interruption-free conversations.
             </p>
           </div>
-          <div className="w-2/4 h-2/4">
+          <div className="md:w-2/4 h-2/4">
             <div className="rounded-full p-3 my-4 border bg-[#F9FAFB] w-10">
               <CalendarDateRangeIcon className="h-4 text-blue-700" />
             </div>
             <h3 className="font-medium text-black">Scheduling made easy</h3>
-            <p className="text-sm text-gray-500">
+            <p className="md:text-sm text-gray-500">
               Streamline your agenda with ClearLink's <br /> intuitive
               scheduling. Set up meetings, <br /> send invitations, and receive
               reminders in <br /> one place.
             </p>
           </div>
-          <div className="w-2/4 h-2/4 ">
+          <div className="md:w-2/4 h-2/4 mb-6">
             <div className="rounded-full p-3 my-4 border bg-[#F9FAFB] w-10">
               <ShieldCheckIcon className="h-4 text-blue-600" />
             </div>
             <h3 className="font-medium text-black">Bank-grade security</h3>
-            <p className="text-sm text-gray-500">
+            <p className="md:text-sm text-gray-500">
               Your privacy is our priority with bank- <br />
               grade security protocols safeguarding <br /> your meetings and
               data from unwanted intruders.
             </p>
           </div>
-          <div></div>
         </div>
         <div className="2/5">
           <img src={rectangle} className="h-96" alt="" />

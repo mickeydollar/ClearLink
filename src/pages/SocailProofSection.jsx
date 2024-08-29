@@ -8,11 +8,11 @@ import automatic from "../images/Automattic.png";
 
 const SocailProofSection = () => {
   return (
-    <div className="container mx-auto text-center mb-16">
-      <p className="text-gray-600 font-medium text-sm">
+    <div className="container text-center md:mb-16">
+      <p className="text-gray-600 font-medium md:text-sm">
         Join 1,500+ companies already vidoe conferencing the ClearLink way
       </p>
-      <div className="flex justify-between p-10">
+      <div className="flex flex-wrap justify-between p-10">
         <img src={shopify} className="h-6" alt="" />
         <img src={coinbase} className="h-6" alt="" />
         <img src={dropbox} className="h-6" alt="" />

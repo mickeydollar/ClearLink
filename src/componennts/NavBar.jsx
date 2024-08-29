@@ -16,7 +16,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <nav className="flex justify-between py-4 px-6 border rounded-full bg-[#F2F4F7] items-center">
+      <nav className="flex justify-between mt-5 py-4 px-6 border rounded-full bg-[#F2F4F7] items-center">
         <div className="nav-logo">
           <img src={logo} className="h-6" alt="logo" />
         </div>
