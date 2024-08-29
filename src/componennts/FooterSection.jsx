@@ -59,8 +59,8 @@ const FooterSection = () => {
             <img src={playstore} className='h-6' alt="" />
         </div>
         </div>
-        <div className='bg-[#F9FAFB] py-7 md:flex justify-between px-16 items-center mt-4'>
-            <h1>© 2023 ClearLink. All rights reserved.</h1>
+        <div className='bg-[#F9FAFB] py-7 md:flex justify-between md:px-16 items-center mt-4'>
+            <h1 className='text-sm flex py-2 justify-center'>© 2023 ClearLink. All rights reserved.</h1>
             <div className='gap-4 flex justify-center'>
             <FaLinkedin /> 
            <CiTwitter/>
