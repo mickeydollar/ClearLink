@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import {
-  Bars3BottomLeftIcon,
+  Bars3Icon,
   ChevronDownIcon,
-  XMarkIcon,
 } from "@heroicons/react/16/solid";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +45,7 @@ const NavBar = () => {
           {isOpen ? (
             <XMarkIcon className="h-6 text-blue-900" />
           ) : (
-            <Bars3BottomLeftIcon className="h-6 text-blue-900" />
+            <Bars3Icon className="h-6 text-blue-900" />
           )}
         </button>
       </nav>
