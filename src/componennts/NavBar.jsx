@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
-import {
-  Bars3Icon,
-  ChevronDownIcon,
-} from "@heroicons/react/16/solid";
+import { Bars3Icon, ChevronDownIcon } from "@heroicons/react/16/solid";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
 const NavBar = () => {
@@ -15,16 +12,18 @@ const NavBar = () => {
   };
 
   return (
-    <div>
-      <nav className="flex justify-between mt-5 py-4 px-6 border rounded-full bg-[#F2F4F7] items-center">
+    <div className="py-7">
+      <nav className="flex justify-between py-4 px-6 border rounded-full bg-[#F2F4F7] items-center">
         <div className="nav-logo">
-          <img src={logo} className="h-6" alt="logo" />
+          <Link to="/">
+            <img src={logo} className="h-6" alt="logo" />
+          </Link>
         </div>
         <ul className="hidden md:flex gap-10 items-center text-[#667085] font-medium">
-          <Link to="./products" className="flex gap-1 items-center">
+          <Link to="/products" className="flex gap-1 items-center">
             Products <ChevronDownIcon className="h-4" />
           </Link>
-          <Link to="./solutions" className="flex gap-1 items-center">
+          <Link to="/solutions" className="flex gap-1 items-center">
             Solutions <ChevronDownIcon className="h-4" />
           </Link>
           <Link to="./resources" className="flex gap-1 items-center">
