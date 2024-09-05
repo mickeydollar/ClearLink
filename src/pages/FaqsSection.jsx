@@ -1,8 +1,15 @@
 import { PlusCircleIcon } from "@heroicons/react/24/outline";
 import { MinusCircleIcon } from "@heroicons/react/24/outline";
-import React from "react";
+import React, { useState } from "react";
 
 const FaqsSection = () => {
+
+  const [accordionOpen, setAccordionOpen] = useState(false)
+
+  const toggleAccordion = () => {
+    setAccordionOpen(!accordionOpen)
+  }
+
   return (
     <div className="md:flex container mx-auto md:px-10 px-6 justify-between md:mb-20 mb-5">
       <div className="md:w-96 ">
@@ -32,15 +39,27 @@ const FaqsSection = () => {
             <MinusCircleIcon className="h-4" />
           </div>
         </div>
+
         <div className="flex p-4 justify-between border-b-2">
           <h4 className="font-medium text-sm">
             Can I use ClearLink on multiple devices?
           </h4>
-          <button>
-            {" "}
-            <PlusCircleIcon className="h-4" />
+          <button onClick={toggleAccordion}>
+          {accordionOpen ? <MinusCircleIcon className="h-4" /> : <PlusCircleIcon className="h-4" />}
           </button>
         </div>
+        {accordionOpen && (
+        <div className="bg-[#F9FAfB]">
+            <div className="text-sm p-4 text-gray-500 ">
+              ClearLink offers flexible meeting options. Depending on your
+              subscription plan, you can host meetings with varying numbers of
+              participants. Our plans are designed to accommodate small team
+              collaborations and large-scale webinars, ensuring you have the
+              right fit for your needs.
+            </div>
+        </div>)}
+ 
+ 
         <div className="flex p-4 justify-between border-b-2">
           <h4 className="font-medium text-sm">
             Is ClearLink compatible with other video conferencing platforms?

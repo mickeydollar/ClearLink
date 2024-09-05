@@ -12,7 +12,7 @@ const SocailProofSection = () => {
       <p className="md:text-gray-600 font-medium md:text-sm">
         Join 1,500+ companies already vidoe conferencing the ClearLink way
       </p>
-      <div className="flex flex-wrap justify-between mb-10 p-10">
+      <div className="md:flex justify-between mb-10 p-10">
         <img src={shopify} className="h-6" alt="" />
         <img src={coinbase} className="h-6" alt="" />
         <img src={dropbox} className="h-6" alt="" />

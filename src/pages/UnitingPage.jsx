@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Avatar from "../images/Avatar.png";
 import frame from "../images/Frame.png";
 import ai from '../images/Ai.png'
 import review from '../images/Reviews.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const UnitingPage = () => {
+
+  useEffect(() => {
+    AOS.init({
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    })
+  }, [])
+
   return (
     <div className="container md:flex mx-auto md:my-24 mt-5 justify-between">
       <div className="px-7">
-        <h6 className="font-medium md:text-6xl text-4xl py-3">Uniting the world, <br />one video call a time</h6>
+        <h6 className="font-medium md:text-6xl text-4xl py-3" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">Uniting the world, <br />one video call a time</h6>
         <p className="py-2 text-gray-500 md:w-4/6">
           Experience the future of communication with ClearLink- where
           crystal-clear vidoe conferencing meets <br /> unparralled simplicity.
@@ -25,7 +38,9 @@ const UnitingPage = () => {
         </div>
       </div>
       <div className="">
-        <img src={frame} className="h-96" alt="" />
+        <img src={frame} data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="h-96" alt="" />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import handArrow from "../images/arrow.png";
 import rectangle from "../images/Rectangle.png";
 import {
@@ -7,21 +7,39 @@ import {
   SpeakerWaveIcon,
   VideoCameraIcon,
 } from "@heroicons/react/16/solid";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const TheadvantageSection = () => {
+
+  useEffect(() => {
+    AOS.init({
+      disable: "phone",
+      duration: 700,
+      easing: "ease-out-cubic",
+    })
+  }, [])
+
   return (
     <div className="container mb-14 relative mx-auto px-9">
       <span className="text-blue-600 font-medium">The ClearLink Advantage</span>
-      <h5 className="font-bold text-2xl py-5 text-black">
+      <h5 data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="font-bold text-2xl py-5 text-black">
         Why choose Clearlink?
       </h5>
-      <p className="text-gray-500">
+      <p data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="text-gray-500">
         In a world where connection is everything, ClearLink takes the lead. Our
         cutting-edge video conferencing app offers:
       </p>
       <img src={handArrow} className="absolute md:flex hidden md:top-9 md:right-48 md:h-40 " alt="" />
 
-      <div className="md:flex mt-16 md:justify-between">
+      <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" className="md:flex mt-16 md:justify-between">
         <div className="md:w-2/4 flex-row flex-wrap md:flex">
           <div className="md:w-2/4 w-full h-2/4">
             <div className="rounded-full p-3 my-4 border bg-[#F9FAFB] w-10">
