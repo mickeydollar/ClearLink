@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <div>
       <div className="bg-hero-image">
-      <NavBar />
-      <UnitingPage />
+        <NavBar />
+        <UnitingPage />
       </div>
       <SocailProofSection />
       <TheadvantageSection />

@@ -10,7 +10,7 @@ const UnitingPage = () => {
 
   useEffect(() => {
     AOS.init({
-      disable: "phone",
+      disable: 'mobile',
       duration: 700,
       easing: "ease-out-cubic",
     })
